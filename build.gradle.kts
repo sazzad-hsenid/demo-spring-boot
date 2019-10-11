@@ -29,3 +29,10 @@ tasks.withType<KotlinCompile> {
 		jvmTarget = "1.8"
 	}
 }
+
+tasks.register("copyJarToBin") {
+	copy {
+		from("build/libs/demo-web-0.0.1-SNAPSHOT.jar")
+		into("/tmp")
+	}
+}
