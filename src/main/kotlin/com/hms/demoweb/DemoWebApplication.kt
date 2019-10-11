@@ -18,5 +18,5 @@ fun main(args: Array<String>) {
 class DemoController{
 
 	@GetMapping
-	fun demoGet() = "demo A"
+	fun demoGet() = "demo AD"
 }
